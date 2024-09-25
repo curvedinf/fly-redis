@@ -1,4 +1,5 @@
 app = "blazed-deals-redis"
+primary_region = 'iad'
 
 [mounts]
   destination = "/data"
@@ -8,10 +9,12 @@ app = "blazed-deals-redis"
   port = 9091
   path = "/metrics"
 
-# Use the Docker image instead of building from source
-
 [build]
   image = "flyio/redis:6.2.6"
+  
+[[vm]]
+  size = 'shared-cpu-1x'
+  memory = '256mb'
 
 # Uncomment these lines for public internet access to Redis on port 10000
 #

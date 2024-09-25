@@ -46,5 +46,3 @@ or
 ```
 scripts/bump_version.sh prerel
 ```
-
-PjZUHV3EYf6We2Cnhxs7pKQXv5Ru8c
