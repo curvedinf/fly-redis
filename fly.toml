@@ -1,8 +1,8 @@
-app = "redis-example"
+app = "blazed-deals-redis"
 
 [mounts]
   destination = "/data"
-  source = "redis_server"
+  source = "blazed_deals_redis"
 
 [metrics]
   port = 9091
